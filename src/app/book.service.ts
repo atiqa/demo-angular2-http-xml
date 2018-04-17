@@ -28,8 +28,8 @@ declare var require: {
 
 @Injectable()
 export class BookService {
-    url = "http://localhost:4200/assets/data/books.json";
-	urlXml = "http://localhost:8081/details";
+    url = "https://github.com/atiqa/demo-angular2-http-xml/blob/master/src/assets/data/books.json";
+	urlXml = "https://github.com/atiqa/demo-angular2-http-xml/blob/master/src/assets/data/data.xml";
 	constructor(private http:Http) { }
     getBooksWithObservable(): Observable<Book[]> {
         return this.http.get(this.url)
