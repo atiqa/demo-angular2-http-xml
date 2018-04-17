@@ -1,0 +1,23 @@
+<h3>Music catalog details with Observable</h3>
+<table>
+  <tr>
+    <th>TITLE</th>
+    <th>ARTIST</th>
+    <th>COUNTRY</th>
+	<th>COMPANY</th>
+	<th>PRICE</th>
+	<th>YEAR</th>
+  </tr>
+  <tr *ngFor="let album of albums">
+    <td>{{album.TITLE}}</td>
+    <td>{{album.ARTEST}}</td>
+    <td>{{album.COUNTRY}}</td>
+	<td>{{album.COMPANY}}</td>
+	<td>{{album.PRICE}}</td>
+	<td>{{album.YEAR}}</td>
+  </tr>
+</table> 
+
+
+<div *ngIf="errorMessage"> {{errorMessage}} </div>
+
